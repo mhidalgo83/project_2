@@ -18,64 +18,83 @@
 <body>
   <form>
     <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="medium-6 cell">
-          <label>
-            <b>Name of Gig</b>
-            <input type="text" placeholder="Labor Gig">
-          </label>
+      <div class="grid-x">
+        <div class="cell small-6">
+          <div class="grid-x grid-padding-x">
+            <div class="medium-12 cell">
+              <label>
+                <b>Name of Gig</b>
+                <input type="text" placeholder="Labor Gig">
+              </label>
+            </div>
+            <div class="medium-12 cell">
+              <label>
+                <b>Location</b>
+                <input type="text" placeholder="1st & Speedway">
+              </label>
+            </div>
+          </div>
+
+          <div class="grid-x grid-padding-x">
+            <div class="medium-12 cell">
+              <label>
+                <b>Gig Category</b>
+                <select>
+                  <option value="">Pick an option</option>
+                  <option value="general_labor">General Labor</option>
+                  <option value="assembly">Assembly</option>
+                  <option value="moving">Moving/Packing</option>
+                  <option value="cleaning">Cleaning</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="grid-x grid-padding-x">
+            <div class="medium-12 cell">
+              <label>
+                <b>Gig Description</b>
+                <textarea placeholder="Description" style="height:100px"></textarea>
+              </label>
+            </div>
+          </div>
+          <div class="grid-x grid-padding-x">
+            <div class="medium-6 cell">
+              <label>
+                <b>Start Date</b>
+                <input type="date" class="span2" value="02/16/12" data-date-format="mm/dd/yy" id="dp2">
+              </label>
+            </div>
+            <div class="medium-6 cell">
+              <label>
+                <b>End Date</b>
+                <input type="date" placeholder=".medium-6.cell">
+              </label>
+            </div>
+          </div>
+          <div class="grid-x grid-padding-x">
+            <div class="medium-6 cell">
+              <label>
+                <b>How much does this gig pay?</b>
+                <input type="number" placeholder="$40.00" value="">
+              </label>
+            </div>
+            <div class="medium-6 cell">
+
+            </div>
+          </div>
         </div>
-        <div class="medium-6 cell">
-          <label>
-            <b>Location</b>
-            <input type="text" placeholder="1st & Speedway">
-          </label>
-        </div>
-      </div>
-      <div class="grid-x grid-padding-x">
-        <div class="medium-12 cell">
-          <label>
-            <b>Gig Category</b>
-            <select>
-              <option value="">Pick an option</option>
-              <option value="general_labor">General Labor</option>
-              <option value="assembly">Assembly</option>
-              <option value="moving">Moving/Packing</option>
-              <option value="cleaning">Cleaning</option>
-            </select>
-          </label>
-        </div>
-      </div>
-      <div class="grid-x grid-padding-x">
-        <div class="medium-12 cell">
-          <label>
-            <b>Gig Description</b>
-            <textarea placeholder="Description" style="height:100px"></textarea>
-          </label>
-        </div>
-      </div>
-      <div class="grid-x grid-padding-x">
-        <div class="medium-6 cell">
-          <label>Start Date
-            <input type="date" class="span2" value="02/16/12" data-date-format="mm/dd/yy" id="dp2">
-          </label>
-        </div>
-        <div class="medium-6 cell">
-          <label>End Date
-            <input type="date" placeholder=".medium-6.cell">
-          </label>
-        </div>
+        <div class="cell small-6"></div>
       </div>
     </div>
   </form>
 
-  <script>
+  <!-- <script>
     $(function () {
       $('#dp2').fdatepicker({
         closeButton: true
       });
     });
-  </script>
+  </script> -->
 </body>
 
 </html>
