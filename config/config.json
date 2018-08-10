@@ -4,17 +4,22 @@
     "password": "root",
     "database": "getagig_db",
     "host": "localhost",
+<<<<<<< HEAD
     "port": 8889,
+=======
+    "port": 3306,
+>>>>>>> 53b6c6d0f3b6d9cd9e5c42ead1d29e04346d97cb
     "dialect": "mysql"
   },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "testdb",
-    "host": "localhost",
-    "dialect": "mysql",
-    "logging": false
-  },
+  // "test": {
+  //   "username": "root",
+  //   "password": "root",
+  //   "database": "testdb",
+  //   "host": "localhost",
+  //   "dialect": "mysql",
+  //   "port": 8889,
+  //   "logging": false
+  // },
   "production": {
     "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
