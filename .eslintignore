@@ -2,3 +2,4 @@ models/index.js
 models/
 node_modules
 routes/
+server.js
