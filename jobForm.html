@@ -20,19 +20,22 @@
     <div class="grid-container">
       <div class="grid-x grid-padding-x">
         <div class="medium-6 cell">
-          <label><b>Name of Gig</b>
+          <label>
+            <b>Name of Gig</b>
             <input type="text" placeholder="Labor Gig">
           </label>
         </div>
         <div class="medium-6 cell">
-          <label><b>Location</b>
+          <label>
+            <b>Location</b>
             <input type="text" placeholder="1st & Speedway">
           </label>
         </div>
       </div>
       <div class="grid-x grid-padding-x">
         <div class="medium-12 cell">
-          <label><b>Gig Category</b>
+          <label>
+            <b>Gig Category</b>
             <select>
               <option value="">Pick an option</option>
               <option value="general_labor">General Labor</option>
@@ -45,25 +48,34 @@
       </div>
       <div class="grid-x grid-padding-x">
         <div class="medium-12 cell">
-          <label><b>Gig Description</b>
+          <label>
+            <b>Gig Description</b>
             <textarea placeholder="Description" style="height:100px"></textarea>
           </label>
         </div>
       </div>
       <div class="grid-x grid-padding-x">
-          <div class="medium-6 cell">
-            <label>Start Date
-              <input type="date" placeholder="today">
-            </label>
-          </div>
-          <div class="medium-6 cell">
-              <label>End Date
-                <input type="date" placeholder=".medium-6.cell">
-              </label>
-            </div>
+        <div class="medium-6 cell">
+          <label>Start Date
+            <input type="date" class="span2" value="02/16/12" data-date-format="mm/dd/yy" id="dp2">
+          </label>
         </div>
+        <div class="medium-6 cell">
+          <label>End Date
+            <input type="date" placeholder=".medium-6.cell">
+          </label>
+        </div>
+      </div>
     </div>
-  </form> 
+  </form>
+
+  <script>
+    $(function () {
+      $('#dp2').fdatepicker({
+        closeButton: true
+      });
+    });
+  </script>
 </body>
 
 </html>
