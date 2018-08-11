@@ -36,7 +36,7 @@
   <form>
     <div class="grid-container fluid" style="margin-top: 60px">
       <div class="grid-x">
-        <div class="cell small-3"></div>
+        <div class="cell small-3" id="empty-cell"></div>
         <div class="cell small-6" style="border: 2px solid grey">
           <div class="grid-x grid-padding-x">
             <div class="medium-6 cell">
@@ -44,7 +44,7 @@
                 <h6>
                   <b>First Name:</b>
                 </h6>
-                <input type="text" placeholder="John">
+                <input type="text" placeholder="John" id="first-name">
               </label>
             </div>
             <div class="medium-6 cell">
@@ -52,7 +52,7 @@
                 <h6>
                   <b>Last Name: </b>
                 </h6>
-                <input type="text" placeholder="Smith">
+                <input type="text" placeholder="Smith" id="last-name">
               </label>
             </div>
           </div>
@@ -63,7 +63,7 @@
                 <h6>
                   <b>Street Address:</b>
                 </h6>
-                <input type="text" placeholder="123 Cherry Lane">
+                <input type="text" placeholder="123 Cherry Lane" id="address">
               </label>
             </div>
           </div>
@@ -73,7 +73,7 @@
                 <h6>
                   <b>City:</b>
                 </h6>
-                <input type="text" placeholder="Tucson">
+                <input type="text" placeholder="Tucson" id="city">
               </label>
             </div>
             <div class="medium-3 cell">
@@ -81,7 +81,7 @@
                 <h6>
                   <b>State:</b>
                 </h6>
-                <input type="text" placeholder="AZ">
+                <input type="text" placeholder="AZ" id="state">
               </label>
             </div>
             <div class="medium-3 cell">
@@ -89,7 +89,7 @@
                 <h6>
                   <b>Zipcode:</b>
                 </h6>
-                <input type="number" placeholder="54321">
+                <input type="number" placeholder="54321" id ="zip">
               </label>
             </div>
           </div>
@@ -99,21 +99,21 @@
                 <h6>
                   <b>Email:</b>
                 </h6>
-                <input type="email" placeholder="johnsmith.com">
+                <input type="email" placeholder="johnsmith.com" id="email">
               </label>
             </div>
           </div>
           <div class="grid-x grid-padding-x">
             <fieldset class="large-12 cell">
               <legend><b>Skills:</b></legend>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Web Development</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Graphic Design</label>
-              <input id="checkbox3" type="checkbox"><label for="checkbox3">Back-End Development       </label>
-              <input id="checkbox4" type="checkbox"><label for="checkbox4">Front-End Development</label>
+              <input id="web-development" type="checkbox"><label for="checkbox1">Web Development</label>
+              <input id="graphic-design" type="checkbox"><label for="checkbox2">Graphic Design</label>
+              <input id="back-end-dev" type="checkbox"><label for="checkbox3">Back-End Development       </label>
+              <input id="front-end-dev" type="checkbox"><label for="checkbox4">Front-End Development</label>
             </fieldset>
           </div>
         </div>
-        <div class="cell small-3"></div>
+        <div class="cell small-3" id="empty-cell"></div>
       </div>
     </div>
   </form>
