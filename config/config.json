@@ -4,7 +4,11 @@
     "password": "root",
     "database": "getagig_db",
     "host": "localhost",
+<<<<<<< HEAD
+    "port": 8889,
+=======
     "port": 3306,
+>>>>>>> 53b6c6d0f3b6d9cd9e5c42ead1d29e04346d97cb
     "dialect": "mysql"
   },
   // "test": {
