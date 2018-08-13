@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-    var Gig = sequelize.define("provider", {
+    var Gig = sequelize.define("gigs", {
         name: {
             type: DataTypes.STRING,
             allowNull: false,
