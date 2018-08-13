@@ -15,9 +15,9 @@ module.exports = function(app) {
   });
 
   // Create a new example
-  app.post("/api/provider", function(req, res) {
-    db.provider.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  app.post("/api/gigs", function(req, res) {
+    db.provider.create(req.body).then(function(data) {
+      res.json(data);
     });
   });
 

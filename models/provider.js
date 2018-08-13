@@ -1,6 +1,6 @@
 module.exports = function (sequelize, DataTypes) {
     var Gig = sequelize.define("provider", {
-        provider_name: {
+        name: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
@@ -24,30 +24,23 @@ module.exports = function (sequelize, DataTypes) {
                 len: [1]
             }
         },
-        deadline: {
-            type: DataTypes.STRING,
+        startDate: {
+            type: DataTypes.DATEONLY,
+            allowNull: false,
+            validate: {
+                len: [1]
+            }
+        },
+        endDate: {
+            type: DataTypes.DATEONLY,
             allowNull: false,
             validate: {
                 len: [1]
             }
         },
         payment: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             allowNull: false,
-            validate: {
-                len: [1]
-            }
-        },
-        email: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                len: [1]
-            }
-        },
-        reviews: {
-            type: DataTypes.TEXT,
-            allwoNull: false,
             validate: {
                 len: [1]
             }
