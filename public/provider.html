@@ -1,4 +1,19 @@
 <!-- Top Navbar -->
+<head>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="./js/providerdata.js"></script>
+  <!-- Compressed CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/css/foundation.min.css" integrity="sha256-iJQ8dZac/jUYHxiEnZJsyVpKcdq2sQvdA7t02QFmp30= sha384-SplqNBo/0ZlvSdwrP/riIPDozO5ck8+yIm++KVqyMAC53S6m3BaV+2OLpi7ULOOh sha512-ho6hK4sAWdCeqopNZWNy1d9Ok2hzfTLQLcGSr8ZlRzDzh6tNHkVoqSl6wgLsqls3yazwiG9H9dBCtSfPuiLRCQ=="
+    crossorigin="anonymous">
+
+  <!-- Compressed JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/js/foundation.min.js" integrity="sha256-G6jsRyH1fxbsvFIXSCuwYmI1aIDYBa28xscrvmYjJy0= sha384-vtoG68NvPc9azmFJr447vvY8qgdyA4FdaJ5/bqvzIM4eAdZfO0iyRRF8l2AAscYI sha512-43seCcNrHA0BQgrtyajB9sp8yOdv5c8QdYvgjP7zJ7v+dmzAcxYDQ2gupb9aztsNWBq1COIp/3NHYkQs4l/dkg=="
+    crossorigin="anonymous"></script>
+  <!--our styling-->
+  <link rel="stylesheet" href="../public/styles/gig_style.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Diplomata|News+Cycle|Playfair+Display+SC:900i|Racing+Sans+One|Special+Elite|Yatra+One" rel="stylesheet">
+  
+</head>
 <div class="top-bar">
   <div class="top-bar-left">
     <h1 style="font-family: SignPainter; color: rgb(46,185,94)">Get-A-Gig</h1>
@@ -26,7 +41,7 @@
               <h6>
                 <b>Name of Gig</b>
               </h6>
-              <input type="text" placeholder="Labor Gig">
+              <input type="text" placeholder="Labor Gig" id="name">
             </label>
           </div>
           <div class="medium-12 cell">
@@ -34,7 +49,7 @@
               <h6>
                 <b>Location</b>
               </h6>
-              <input type="text" placeholder="1st & Speedway">
+              <input type="text" placeholder="1st & Speedway" id="location">
             </label>
           </div>
         </div>
@@ -45,7 +60,7 @@
               <h6>
                 <b>Gig Category</b>
               </h6>
-              <select>
+              <select id="category">
                 <option value="">Pick an option</option>
                 <option value="general_labor">General Labor</option>
                 <option value="assembly">Assembly</option>
@@ -61,7 +76,7 @@
               <h6>
                 <b>Gig Description</b>
               </h6>
-              <textarea placeholder="Description" style="height:100px"></textarea>
+              <textarea placeholder="Description" style="height:100px" id="description"></textarea>
             </label>
           </div>
         </div>
@@ -71,7 +86,7 @@
               <h6>
                 <b>Start Date</b>
               </h6>
-              <input type="date" class="span2" value="02/16/12" data-date-format="mm/dd/yy" id="dp2">
+              <input type="date" class="span2"  data-date-format="yyyy/mm/dd" id="startDate">
             </label>
           </div>
           <div class="medium-6 cell">
@@ -79,7 +94,7 @@
               <h6>
                 <b>End Date</b>
               </h6>
-              <input type="date" placeholder=".medium-6.cell">
+              <input type="date" placeholder=".medium-6.cell" data-date-format="yyyy/mm/dd" id="endDate">
             </label>
           </div>
         </div>
@@ -89,11 +104,11 @@
               <h6>
                 <b>How much does this gig pay?</b>
               </h6>
-              <input type="number" placeholder="$40.00" value="">
+              <input type="number" placeholder="$40.00" id="payment">
             </label>
           </div>
           <div class="medium-6 cell">
-            <button type="button" class="success button" style="margin-top: 26px">Submit</button>
+            <button type="button" class="success button" style="margin-top: 26px" id="submit">Submit</button>
 
           </div>
         </div>
