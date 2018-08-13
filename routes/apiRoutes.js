@@ -2,7 +2,7 @@ var db = require("../models");
 
 module.exports = function(app) {
   // Get all examples
-  app.get("/api/provider", function(req, res) {
+  app.get("/api/gigs", function(req, res) {
     db.provider.findAll({}).then(function(dbExamples) {
       res.json(dbExamples);
     });
@@ -14,16 +14,16 @@ module.exports = function(app) {
     });
   });
 
-  // Create a new example
+  // Create a new gig...
   app.post("/api/gigs", function(req, res) {
-    db.provider.create(req.body).then(function(data) {
+    db.gigs.create(req.body).then(function(data) {
       res.json(data);
     });
   });
 
-  app.post("/api/taker", function(req, res) {
-    db.taker.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  app.post("/api/takers", function(req, res) {
+    db.takers.create(req.body).then(function(data) {
+      res.json(data);
     });
   });
 

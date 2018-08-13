@@ -4,7 +4,7 @@ $(document).ready(function () {
         event.preventDefault();
         //Object to be sent to database...
         var newGig = {
-            providerName: $("#name").val().trim(),
+            name: $("#name").val().trim(),
             location: $("#location").val().trim(),
             category: $("#category").val().trim(),
             description: $("#description").val().trim(),

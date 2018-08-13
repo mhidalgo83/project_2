@@ -3,14 +3,13 @@ var path = require("path");
 
 module.exports = function (app) {
   // Load index page
-  /*app.get("/", function (req, res) {
-    db.Example.findAll({}).then(function (dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        examples: dbExamples
+  app.get("/jobsAvailable", function (req, res) {
+    db.gigs.findAll({}).then(function (data) {
+      res.render("jobsAvailable", {
+        jobs: data
       });
     });
-  });*/
+  });
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function (req, res) {
@@ -29,19 +28,14 @@ module.exports = function (app) {
   });
 
   //Provider form
-  app.get("/provider", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/provider.html"));
+  app.get("/gig", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/gig.html"));
   });
 
   //Taker form...
   app.get("/taker", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/taker.html"));
   });
-
-
-
-
-
 
   //Render 404 page for any unmatched routes
   app.get("*", function (req, res) {
