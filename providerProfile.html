@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"> -->
+
+  <title>Get-A-Gig</title>
+  <!-- Compressed CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/css/foundation.min.css" integrity="sha256-iJQ8dZac/jUYHxiEnZJsyVpKcdq2sQvdA7t02QFmp30= sha384-SplqNBo/0ZlvSdwrP/riIPDozO5ck8+yIm++KVqyMAC53S6m3BaV+2OLpi7ULOOh sha512-ho6hK4sAWdCeqopNZWNy1d9Ok2hzfTLQLcGSr8ZlRzDzh6tNHkVoqSl6wgLsqls3yazwiG9H9dBCtSfPuiLRCQ=="
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./public/styles/gig_style.css" media="screen" title="no title" charset="utf-8">
+  <!-- Compressed JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/js/foundation.min.js" integrity="sha256-G6jsRyH1fxbsvFIXSCuwYmI1aIDYBa28xscrvmYjJy0= sha384-vtoG68NvPc9azmFJr447vvY8qgdyA4FdaJ5/bqvzIM4eAdZfO0iyRRF8l2AAscYI sha512-43seCcNrHA0BQgrtyajB9sp8yOdv5c8QdYvgjP7zJ7v+dmzAcxYDQ2gupb9aztsNWBq1COIp/3NHYkQs4l/dkg=="
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- Top Navbar -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <h1 style="font-family: SignPainter; color: rgb(46,185,94); background-color: white">Get-A-Gig</h1>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li>
+          <input type="search" placeholder="Search">
+        </li>
+        <li>
+          <button type="button" class="button">Search</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Jobs Available -->
+  <div class="grid-container fluid" style="margin-top: 60px">
+    <div class="grid-x">
+      <div class="cell small-2" id="empty-cell"></div>
+      <div class="cell small-8" style="border: 2px solid grey; border-radius: 4px; background-color: white">
+        <div class="username" style="padding:4px; color:rgb(46,185,94)">
+          <h3>Name: <span id="name" style="color: black"></span></h3>
+        </div>
+        <hr>
+        <div id="jobs-title">
+          <h3 style="padding:4px; color:rgb(46,185,94)">Current Gigs Posted:</h3>
+
+        </div>
+        <div class="jobs-available-container" style="border:2px solid lightgray; margin:5px; border-radius: 4px; background-color: white">
+          {{#each jobs}}
+          <div class="each-job" style="padding:6px">
+            <p style="border: 1px solid grey; padding: 4px; border-radius: 4px">
+              <span class="label">Gig Description:</span> {{this.description}} Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="seekers-interested" style="padding:6px">
+            {{#each seekers}}
+            <p style="border: 1px solid grey; padding: 4px; border-radius: 4px">
+              <span class="label">Gig Seekers Interested: </span> {{this.seeker}}
+              <span class="seeker-email" style="color: rgb(46,185,94)">Email: </span><a> {{this.email}} </a>  </p>
+            {{/each}}
+          </div>
+          {{/each}}
+        </div>
+
+      </div>
+    </div>
+    <div class="cell small-2" id="empty-cell"></div>
+  </div>
+  </div>
+</body>
