@@ -1,3 +1,4 @@
+
   <!-- Jobs Available -->
   <div class="grid-container fluid" style="margin-top: 60px">
     <div class="grid-x">
@@ -10,9 +11,10 @@
         <div class="jobs-available-container" style="border:2px solid lightgray; margin:5px; border-radius: 4px; background-color: white">
           {{#each jobs}}
           <div class="each-job" style="padding:6px">
-            <p style="border: 1px solid grey; padding: 4px; border-radius: 4px">
-              <span class="label">Job Name:</span>{{this.name}}</p>
-            <a data-id="{{this.id}}" class="button success small" id="interest-btn" style="border-radius: 4px" href="jobsAvailable/{{this.id}}">Interested</a>
+            <a data-id="{{this.id}}" style="border-radius: 4px" href="jobsAvailable/{{this.id}}">
+              <p style="border: 1px solid grey; padding: 4px; border-radius: 4px">
+                {{this.name}}</p>
+            </a>
           </div>
           {{/each}}
         </div>

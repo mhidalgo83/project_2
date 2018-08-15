@@ -13,10 +13,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/css/foundation.min.css" integrity="sha256-iJQ8dZac/jUYHxiEnZJsyVpKcdq2sQvdA7t02QFmp30= sha384-SplqNBo/0ZlvSdwrP/riIPDozO5ck8+yIm++KVqyMAC53S6m3BaV+2OLpi7ULOOh sha512-ho6hK4sAWdCeqopNZWNy1d9Ok2hzfTLQLcGSr8ZlRzDzh6tNHkVoqSl6wgLsqls3yazwiG9H9dBCtSfPuiLRCQ=="
     crossorigin="anonymous">
   <!--our styling-->
-
-  <link rel="stylesheet" href="./styles/gig_style.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Diplomata|News+Cycle|Playfair+Display+SC:900i|Racing+Sans+One|Special+Elite|Yatra+One"
     rel="stylesheet">
+  <link rel="stylesheet" href="./styles/gig_style.css" type="text/css" />
 </head>
 
 <body>
@@ -31,6 +30,7 @@
     </div>
   </div>
   <!-- Form -->
+
   <form>
     <div class="grid-container fluid" style="margin-top: 60px">
       <div class="grid-x">
@@ -52,76 +52,78 @@
                 </h6>
                 <input type="text" placeholder="Smith" id="lastName">
               </label>
-            </div>
-          </div>
-
-          <div class="grid-x grid-padding-x">
-            <div class="medium-12 cell">
-              <label>
-                <h6>
-                  <b>Street Address:</b>
-                </h6>
-                <input type="text" placeholder="123 Cherry Lane" id="address">
-              </label>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="medium-6 cell">
-              <label>
-                <h6>
-                  <b>City:</b>
-                </h6>
-                <input type="text" placeholder="Tucson" id="city">
-              </label>
-            </div>
-            <div class="medium-3 cell">
-              <label>
-                <h6>
-                  <b>State:</b>
-                </h6>
-                <input type="text" placeholder="AZ" id="state">
-              </label>
-            </div>
-            <div class="medium-3 cell">
-              <label>
-                <h6>
-                  <b>Zipcode:</b>
-                </h6>
-                <input type="number" placeholder="54321" id="zip">
-              </label>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="medium-12 cell">
-              <label>
-                <h6>
-                  <b>Email:</b>
-                </h6>
-                <input type="email" placeholder="johnsmith.com" id="email">
-              </label>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="medium-12 cell">
-              <label>
-                <h6>
-                  <b>Skills:</b>
-                </h6>
-                <textarea placeholder="Write any skills you have..." style="height:100px" id="skills"></textarea>
-              </label>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="medium-6 cell">
-              <button type="button" class="success button" style="margin-top: 26px" id="submit">Submit</button>
 
             </div>
+
+            <div class="grid-x grid-padding-x">
+              <div class="medium-12 cell">
+                <label>
+                  <h6>
+                    <b>Street Address:</b>
+                  </h6>
+                  <input type="text" placeholder="123 Cherry Lane" id="address">
+                </label>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+              <div class="medium-6 cell">
+                <label>
+                  <h6>
+                    <b>City:</b>
+                  </h6>
+                  <input type="text" placeholder="Tucson" id="city">
+                </label>
+              </div>
+              <div class="medium-3 cell">
+                <label>
+                  <h6>
+                    <b>State:</b>
+                  </h6>
+                  <input type="text" placeholder="AZ" id="state">
+                </label>
+              </div>
+              <div class="medium-3 cell">
+                <label>
+                  <h6>
+                    <b>Zipcode:</b>
+                  </h6>
+                  <input type="number" placeholder="54321" id="zip">
+                </label>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+              <div class="medium-12 cell">
+                <label>
+                  <h6>
+                    <b>Email:</b>
+                  </h6>
+                  <input type="email" placeholder="johnsmith.com" id="email">
+                </label>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+              <div class="medium-12 cell">
+                <label>
+                  <h6>
+                    <b>Skills:</b>
+                  </h6>
+                  <textarea placeholder="Write any skills you have..." style="height:100px" id="skills"></textarea>
+                </label>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+              <div class="medium-6 cell">
+                <button type="button" class="success button" style="margin-top: 26px" id="submit">Submit</button>
+
+              </div>
+            </div>
           </div>
+          <div class="cell small-3" id="empty-cell"></div>
         </div>
-        <div class="cell small-3" id="empty-cell"></div>
       </div>
     </div>
   </form>
+
 
 </body>
 
