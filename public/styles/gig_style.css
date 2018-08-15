@@ -1,5 +1,6 @@
 body {
     background-image: url(https://images.pexels.com/photos/1020320/pexels-photo-1020320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350);
+    font-family: 'Special Elite';
 }
 h1 {
     padding-top: 15px;
@@ -9,7 +10,7 @@ h1 {
 
 .top-bar {
     background-color: rgb(46,185,94);
-    font-family: Special Elite;
+    font-family: 'Special Elite';
     font-size: 20px;
     height: 60px;
     border-bottom: solid 3px rgb(24, 134, 61);
