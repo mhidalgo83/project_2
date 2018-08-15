@@ -38,58 +38,88 @@
       </div>
     </div>
 
-  <div id="center">
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x">
-
-        <div class="media-object">
-          <div class="media-object-section">
-            <div class="thumbnail">
-              <div class="switch large">
-                <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
-                <label class="switch-paddle" for="yes-no">
-                  <span class="show-for-sr">Do you like me?</span>
-                  <span class="switch-active" aria-hidden="true">Yes</span>
-                  <span class="switch-inactive" aria-hidden="true">No</span>
-                </label>
+    <div id="title">
+      <h1 id="heading">Get-A-Gig</h1>
+    </div>
+    
+            <div id="center">
+              <div class="grid-container">
+                <div class="grid-x grid-margin-x">
+               
+                  <div class="media-object">
+                    <div class="media-object-section">
+                      <div class="thumbnail">
+                        
+                          <a class="button" id = "createUser" href="">Create Account</a>
+                      
+                      </div>
+                    </div>
+                    <div class="media-object-section">
+                      <h4>New user?</h4>
+                      <p>
+                        <form>
+                          <div class="grid-container">
+                            <div class="grid-x grid-padding-x">
+                              <div class="medium-6 cell">
+                                <label> Username
+                                  <input type="text" id = "newusername" placeholder="hardworkinGuy91">
+                                </label>
+                              </div>
+                              <div class="medium-6 cell">
+                                <label>User Email
+                                  <input type="email" id = "newuser" placeholder="kyle@yahoo.com">
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="media-object-section">
-            <h4>New user?</h4>
-            <p>Choose Yes here if you are new to Git-A-Gig and have not yet made a username.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="center2">
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x">
-        <!-- <div id="center2"> -->
-        <div class="media-object">
-          <div class="media-object-section">
-            <div class="thumbnail">
-              <div class="switch large">
-                <input class="switch-input" id="yes-no2" type="checkbox" name="exampleSwitch2">
-                <label class="switch-paddle" for="yes-no2">
-                  <span class="show-for-sr">Do you like </span>
-                  <span class="switch-active" aria-hidden="true">Yes</span>
-                  <span class="switch-inactive" aria-hidden="true">No</span>
-                </label>
+            <div id="center2">
+              <div class="grid-container">
+                <div class="grid-x grid-margin-x">
+                  <!-- <div id="center2"> -->
+                  <div class="media-object">
+                    <div class="media-object-section">
+                      <div class="thumbnail">
+                     
+                          <a class="button" id = "existingUser" href="#">Sign In</a>
+  
+                      </div>
+                    </div>
+                    <div class="media-object-section">
+                      <h4>Returing user?</h4>
+                      <p>
+
+                        <form> <!-- Form -->
+                          <div class="grid-container">
+                            <div class="grid-x grid-padding-x">
+                              <div class="medium-6 cell">
+                                <label> Username
+                                  <input type="text" id = "returningUser" placeholder="hardworkinGuy91">
+                                </label>
+                              </div>
+
+                              <div class="medium-6 cell">
+                                <label>User Email
+                                  <input id = "returningEmail" type="email" placeholder="kyle@yahoo.com">
+                                </label>
+  
+                              </div>
+                            </div>
+                          </div>
+                        </form> <!--Form -->
+                      </p>
+                    </div>
+                  </div>
+          
+                </div>
               </div>
             </div>
-          </div>
-          <div class="media-object-section">
-            <h4>Returing user?</h4>
-            <p>choose yes here if you have already made a username on Git-A-Gig.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
   <!-- <div id="center3">
         
             <form>
@@ -118,6 +148,9 @@
   </div>
   </div>
 
+
+
+
   <!-- jQuery must be imported before Foundation -->
   <script src="js/jquery.min.js"></script>
   <!-- this will include every plugin and utility required by Foundation -->
@@ -131,25 +164,11 @@
     $(document).foundation();
               // var elem = new Foundation.DropdownMenu(element, options);
   </script>
+<!-- sign in js -->
+<script src = "./js/returningUser.js"></script>
+<script src = "./js/createUser.js"></script>
 
 </body>
 
 </html>
 
-<!-- jQuery must be imported before Foundation -->
-<script src="js/jquery.min.js"></script>
-<!-- this will include every plugin and utility required by Foundation -->
-<script src="js/foundation.min.js"></script>
-
-
-<script src="js/vendor/jquery.js"></script>
-<script src="js/vendor/what-input.js"></script>
-<script src="js/vendor/foundation.min.js"></script>
-<script>
-  $(document).foundation();
-      // var elem = new Foundation.DropdownMenu(element, options);
-</script>
-
-</body>
-
-</html>

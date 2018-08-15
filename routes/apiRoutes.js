@@ -27,6 +27,22 @@ module.exports = function(app) {
     });
   });
 
+  //sign in page
+  app.post("/api/users", function (req,res) {
+    db.users.create(req.body).then(function(data) {
+      res.json(data);
+  })
+
+  app.get("/api/users", function (req,res){
+    db.users.findAll({
+      where: {
+        username: req.params.username
+      }
+    }).then(function(data){
+      res.json(data);
+    });
+  });
+
   // Delete an example by id
   app.delete("/api/provider/:id", function(req, res) {
     db.provider.destroy({ where: { id: req.params.id } }).then(function(dbExample) {

@@ -5,39 +5,41 @@ body {
 #title {
 
     box-sizing: border-box;
-    width: 700px;
+    width: 500px;
     border:4px inset rgb(182, 214, 255);
     background-color: rgb(246, 250, 246);
     color: black;
-    position: fixed;
+    position: relative;
     text-align: center;
     top: 5%;
-    left: 8%;
-    right: 12%;
+    left: 30%;
+    right: 30%;
 
 }
 
 #heading {
-    font-family: 'Racing Sans One', cursive;
+    font-family: 'Special Elite', cursive;
 }
 
 h4 {
-    font-family: 'Racing Sans One', cursive;
+    
+    font-family: 'Special Elite', cursive;
 }
 
-.switch-paddle {
-    background-color:rgb(197, 3, 3);
-}
+
 
 #center {
     font-family: 'Special Elite', cursive;
     background-color:white;
     border:4px inset rgb(159, 159, 247);
-    position: fixed;
+    position: relative;
+    width: 85%;
+    height: 200px;
+    margin: 20px;
     top:30%;
     left:5%;
     right:10%;
-    transform: (-50%,-50%);
+    /* transform: (-50%,-50%); */
     border-radius: 5px;
 }
 
@@ -45,15 +47,28 @@ h4 {
     font-family: 'Special Elite', cursive;
     background-color: white;
     border:4px inset  rgb(159, 159, 247);
-    position: fixed;
-    top:50%;
+    position: relative;
+    width: 85%;
+    height:200px;
+    top:65%;
     left:5%;
     right:10%;
-     transform: (-50%,-50%); 
+    margin: 20px;
+     /* transform: (-50%,-50%);  */
      border-radius: 5px;
 }
 
-#center3 {
+#createUser {
+    position:relative;
+    top: 10%;
+    background-color: rgb(46,185,94);
+}
+
+#existingUser {
+    top: 10%;
+    background-color: rgb(46,185,94);
+}
+/* #center3 {
     font-family: 'Special Elite', cursive;
     background-color: white;
     border:4px inset  rgb(159, 159, 247);
@@ -63,7 +78,7 @@ h4 {
     right:30%;
      
      border-radius: 5px;
-}
+} */
 
 #signin{
     
