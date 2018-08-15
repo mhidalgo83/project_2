@@ -11,12 +11,15 @@ module.exports = function (app) {
     });
   });
 
-  // Load example page and pass in an example by id
-  app.get("/example/:id", function (req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function (dbExample) {
-      res.render("example", {
-        example: dbExample
+  // Loads jobDescription page based on id from jobsAvailable page
+  
+  app.get("/jobsAvailable/:id", function (req, res) {
+    console.log(req.params.id);
+    db.gigs.findOne({ where: { id: req.params.id } }).then(function (data) {
+      res.render("jobDescription", {
+        job: data
       });
+      console.log(data);
     });
   });
 
