@@ -75,3 +75,19 @@ h4 {
     border-radius: 45px;
     font-family: 'Special Elite', cursive;
 }
+
+#taker-form {
+    font-family: 'Special Elite', cursive;
+    background-color: white;
+    border:4px inset  rgb(159, 159, 247);
+    position: relative;
+    width: 77%;
+    /* top:50%; */
+    left:10%;
+
+     transform: (-50%,-50%); 
+     border-radius: 5px;
+}
+
+
+
