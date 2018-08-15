@@ -1,7 +1,31 @@
 body {
-    background-image: url(https://media.gettyimages.com/vectors/newspaper-background-vector-id852825734);
+    background-image: url(https://images.pexels.com/photos/1020320/pexels-photo-1020320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350);
+}
+h1 {
+    padding-top: 15px;
+    font-family: Special Elite; 
+    color: white;
 }
 
+.top-bar {
+    background-color: rgb(46,185,94);
+    font-family: Special Elite;
+    font-size: 20px;
+    height: 60px;
+    border-bottom: solid 3px rgb(24, 134, 61);
+    border-top: solid 3px rgb(24, 134, 61);
+}
+.top-links {
+    color: white;
+    font-size: 20px;
+    padding-top: 40px;
+}
+#list-o-gigs {
+    margin-left: 80px;
+}
+#post-a-gig {
+    margin-left: 30px;
+}
 #title {
 
     box-sizing: border-box;
@@ -18,22 +42,35 @@ body {
 }
 
 #heading {
-    font-family: 'Racing Sans One', cursive;
+    font-family: 'Special Elite', cursive;
 }
 
 h4 {
-    font-family: 'Racing Sans One', cursive;
+    font-family: 'Special Elite', cursive;
 }
 
 .switch-paddle {
     background-color:rgb(197, 3, 3);
 }
+.button-home {
+    margin-left: 20px;
+    margin-top: 8px;
+    font-size: 30px;
+    background-color: rgb(24, 134, 61);
+    color: white;
+    height: 40px;
+    width: 30px;
+    padding-top: 8px;
+    border-radius: 3px;
+}
 
 #center {
     font-family: 'Special Elite', cursive;
     background-color:white;
-    border:4px inset rgb(159, 159, 247);
+    border:4px inset rgb(24, 134, 61);
     position: fixed;
+    height: 200px;
+    margin: 20px;
     top:30%;
     left:5%;
     right:10%;
@@ -44,25 +81,15 @@ h4 {
 #center2 {
     font-family: 'Special Elite', cursive;
     background-color: white;
-    border:4px inset  rgb(159, 159, 247);
+    border:4px inset  rgb(24, 134, 61);
     position: fixed;
+    height: 200px;
+    margin: 20px;
     top:50%;
     left:5%;
     right:10%;
-     transform: (-50%,-50%); 
-     border-radius: 5px;
-}
-
-#center3 {
-    font-family: 'Special Elite', cursive;
-    background-color: white;
-    border:4px inset  rgb(159, 159, 247);
-    position: fixed;
-    top:80%;
-    left: 5%;
-    right:30%;
-     
-     border-radius: 5px;
+    transform: (-50%,-50%); 
+    border-radius: 5px;
 }
 
 #signin{
@@ -76,17 +103,16 @@ h4 {
     font-family: 'Special Elite', cursive;
 }
 
-#taker-form {
-    font-family: 'Special Elite', cursive;
-    background-color: white;
-    border:4px inset  rgb(159, 159, 247);
-    position: relative;
-    width: 77%;
-    /* top:50%; */
-    left:10%;
+#createUser {
+    background-color: rgb(46,185,94);
+}
 
-     transform: (-50%,-50%); 
-     border-radius: 5px;
+#existingUser {
+    background-color: rgb(46,185,94);
+}
+#title-name {
+    font-size: 30px;
+    color: white
 }
 
 

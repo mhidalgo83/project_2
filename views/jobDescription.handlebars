@@ -1,77 +1,36 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"> -->
-
-    <title>Get-A-Gig</title>
-    <!-- Compressed CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/css/foundation.min.css" integrity="sha256-iJQ8dZac/jUYHxiEnZJsyVpKcdq2sQvdA7t02QFmp30= sha384-SplqNBo/0ZlvSdwrP/riIPDozO5ck8+yIm++KVqyMAC53S6m3BaV+2OLpi7ULOOh sha512-ho6hK4sAWdCeqopNZWNy1d9Ok2hzfTLQLcGSr8ZlRzDzh6tNHkVoqSl6wgLsqls3yazwiG9H9dBCtSfPuiLRCQ=="
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="./public/styles/gig_style.css" media="screen" title="no title" charset="utf-8">
-    <!-- Compressed JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/js/foundation.min.js" integrity="sha256-G6jsRyH1fxbsvFIXSCuwYmI1aIDYBa28xscrvmYjJy0= sha384-vtoG68NvPc9azmFJr447vvY8qgdyA4FdaJ5/bqvzIM4eAdZfO0iyRRF8l2AAscYI sha512-43seCcNrHA0BQgrtyajB9sp8yOdv5c8QdYvgjP7zJ7v+dmzAcxYDQ2gupb9aztsNWBq1COIp/3NHYkQs4l/dkg=="
-        crossorigin="anonymous"></script>
-
-</head>
-
-<body>
-    <!-- Top Navbar -->
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <h1 style="font-family: SignPainter; color: rgb(46,185,94); background-color: white">Get-A-Gig</h1>
-        </div>
-        <div class="top-bar-right">
-            <ul class="menu">
-                <li>
-                    <input type="search" placeholder="Search">
-                </li>
-                <li>
-                    <button type="button" class="button">Search</button>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
-     <div class="card" id = "taker-form" >
-    <!-- Jobs Available -->
-    {{#job}}
-    <div class="grid-container fluid" style="margin-top: 60px">
-        <div class="grid-x">
-            <div class="cell small-2" id="empty-cell"></div>
-            <div class="cell small-8" style="border: 2px solid grey; border-radius: 4px; background-color: white">
-                <div class="gigName" style="padding:4px; color:rgb(46,185,94); text-align: center">
-                    <h2>{{this.name}}
-                    </h2>
-                </div>
-                <hr>
-                <div id="category">
-                    <h3 style="padding:4px; color:rgb(46,185,94)">Category:</h3>
-                    <p>{{this.category}}</p>
-                </div>
-                <div id="gigLocation">
-                    <h3 style="padding:4px; color:rgb(46,185,94)">Location:</h3>
-                    <p>{{this.location}}</p>
-                </div>
-                <div id="gigDescription">
-                    <h3 style="padding:4px; color:rgb(46,185,94)">Description:</h3>
-                    <p>{{this.description}}</p>
-                </div>
-                <div id="payment">
-                    <h3 style="padding:4px; color:rgb(46,185,94)">Payment:</h3>
-                    <p>$ {{this.payment}}</p>
-                </div>
-                <div id="dates">
-                    <h3 style="padding:4px; color:rgb(46,185,94)">Dates:</h3>
-                    <p>{{this.startDate}} - {{this.endDate}}</p>
-                </div>
+<!-- Jobs Available -->
+{{#job}}
+<div class="grid-container fluid" style="margin-top: 60px">
+    <div class="grid-x">
+        <div class="cell small-2" id="empty-cell"></div>
+        <div class="cell small-8" style="border: 2px solid grey; border-radius: 4px; background-color: white">
+            <div class="gigName" style="padding:4px; color:rgb(46,185,94); text-align: center">
+                <h2>{{this.name}}
+                </h2>
+            </div>
+            <hr>
+            <div id="category">
+                <h3 style="padding:4px; color:rgb(46,185,94)">Category:</h3>
+                <p>{{this.category}}</p>
+            </div>
+            <div id="gigLocation">
+                <h3 style="padding:4px; color:rgb(46,185,94)">Location:</h3>
+                <p>{{this.location}}</p>
+            </div>
+            <div id="gigDescription">
+                <h3 style="padding:4px; color:rgb(46,185,94)">Description:</h3>
+                <p>{{this.description}}</p>
+            </div>
+            <div id="payment">
+                <h3 style="padding:4px; color:rgb(46,185,94)">Payment:</h3>
+                <p>$ {{this.payment}}</p>
+            </div>
+            <div id="dates">
+                <h3 style="padding:4px; color:rgb(46,185,94)">Dates:</h3>
+                <p>{{this.startDate}} - {{this.endDate}}</p>
             </div>
         </div>
-        <div class="cell small-2" id="empty-cell"></div>
     </div>
-    {{/job}}
-    </div>
+    <div class="cell small-2" id="empty-cell"></div>
 </div>
-
-</body>
+{{/job}}
