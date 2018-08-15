@@ -49,8 +49,8 @@ h4 {
     top:50%;
     left:5%;
     right:10%;
-     transform: (-50%,-50%); 
-     border-radius: 5px;
+    transform: (-50%,-50%); 
+    border-radius: 5px;
 }
 
 #center3 {
@@ -60,13 +60,11 @@ h4 {
     position: fixed;
     top:80%;
     left: 5%;
-    right:30%;
-     
-     border-radius: 5px;
+    right:30%;    
+    border-radius: 5px;
 }
 
 #signin{
-    
     position: fixed;
     width: 275px;
     height: 100px;
@@ -84,9 +82,8 @@ h4 {
     width: 77%;
     /* top:50%; */
     left:10%;
-
-     transform: (-50%,-50%); 
-     border-radius: 5px;
+    transform: (-50%,-50%); 
+    border-radius: 5px;
 }
 
 
