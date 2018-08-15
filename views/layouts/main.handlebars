@@ -2,17 +2,23 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <!-- Script -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get A Gig</title>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/js/foundation.min.js" integrity="sha256-G6jsRyH1fxbsvFIXSCuwYmI1aIDYBa28xscrvmYjJy0= sha384-vtoG68NvPc9azmFJr447vvY8qgdyA4FdaJ5/bqvzIM4eAdZfO0iyRRF8l2AAscYI sha512-43seCcNrHA0BQgrtyajB9sp8yOdv5c8QdYvgjP7zJ7v+dmzAcxYDQ2gupb9aztsNWBq1COIp/3NHYkQs4l/dkg=="
     crossorigin="anonymous"></script>
-  <!-- CSS -->
+  <!-- sign in js -->
+  <script src="./js/returningUser.js"></script>
+  <script src="./js/createUser.js"></script>
+  <!-- Compressed CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/css/foundation.min.css" integrity="sha256-iJQ8dZac/jUYHxiEnZJsyVpKcdq2sQvdA7t02QFmp30= sha384-SplqNBo/0ZlvSdwrP/riIPDozO5ck8+yIm++KVqyMAC53S6m3BaV+2OLpi7ULOOh sha512-ho6hK4sAWdCeqopNZWNy1d9Ok2hzfTLQLcGSr8ZlRzDzh6tNHkVoqSl6wgLsqls3yazwiG9H9dBCtSfPuiLRCQ=="
     crossorigin="anonymous">
+  <!--our styling-->
   <link href="https://fonts.googleapis.com/css?family=Diplomata|News+Cycle|Playfair+Display+SC:900i|Racing+Sans+One|Special+Elite|Yatra+One"
     rel="stylesheet">
-  <link rel="stylesheet" href="./styles/gig_style.css" media="screen" title="no title" charset="utf-8">
-  <title>Get-A-Gig</title>
+  <link rel="stylesheet" href="../../styles/gig_style.css" type="text/css" />
 </head>
 
 <body>
@@ -21,12 +27,16 @@
     <div class="top-bar-left">
       <button type="button" class="button-home">G</button></a><span id="title-name" style="color: white">et-A-Gig</span>
       <a href="/jobsAvailable" class="top-links" id="list-o-gigs"><b>List-O-Gigs</b></a>
-      <a href="./gig.html" class="top-links" id="post-a-gig"><b>Post-A-Gig</b></a>
+      <a href="/gig.html" class="top-links" id="post-a-gig"><b>Post-A-Gig</b></a>
     </div>
     <div class="top-bar-right">
     </div>
   </div>
   {{{body}}}
+  <script src="js/vendor/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 </body>
 
 </html>
