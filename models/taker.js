@@ -1,4 +1,4 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
     var Taker = sequelize.define("takers", {
         firstName: {
             type: DataTypes.STRING,
@@ -18,7 +18,7 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.TEXT,
             allowNull: false,
             validate: {
-                len:[1]
+                len: [1]
             }
         },
         city: {
@@ -57,5 +57,14 @@ module.exports = function(sequelize, DataTypes) {
             }
         }
     });
+    Taker.associate = function (models) {
+        // A function stating that a taker should belong to an gig
+        // A taker can't be created without a gig due to the foreign key constraint
+        Taker.belongsTo(models.gigs, {
+            foreignKey: {
+                allowNull: false
+            }
+        });
+    };
     return Taker;
 };
