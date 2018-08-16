@@ -46,5 +46,12 @@ module.exports = function (sequelize, DataTypes) {
             }
         }
     });
+    Gig.associate = function(models) {
+        // Associating gigs with takers
+        // When a gig is deleted, also delete any associated takers
+        Gig.hasMany(models.takers, {
+          onDelete: "cascade"
+        });
+      };
     return Gig;
 };
