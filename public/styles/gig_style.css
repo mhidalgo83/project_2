@@ -31,7 +31,8 @@ h1 {
 #claim {
     padding: 4px;
 }
-#gig-form {
+#gig-form,
+#taker-form {
     font-family: 'Special Elite';
     background-color: white;
     padding-top: 20px; 

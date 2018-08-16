@@ -2,11 +2,7 @@
 <div class="grid-container fluid" style="margin-top: 60px">
     <div class="grid-x">
         <div class="cell small-2" id="empty-cell"></div>
-<<<<<<< HEAD
         <div class="cell small-8" id="job-description" style="border: 2px solid grey; border-radius: 4px; background-color: white">
-=======
-        <div class="cell small-8" style="border: 2px solid grey; border-radius: 4px; background-color: white">
->>>>>>> dec8e71fdab8c8652952da425d5a0905cba3355c
             {{#job}}
             <div class="gigName" style="padding:4px; color:rgb(46,185,94); text-align: center">
                 <h2>{{this.name}}
@@ -14,32 +10,7 @@
             </div>
             <hr>
             <div id="description-display" style="border:2px solid lightgray; margin:5px; border-radius: 4px; background-color: white">
-                <div id="category">
-                    <h3 style="padding:4px; color:rgb(46,185,94)">Category:</h3>
-                    <p>{{this.category}}</p>
-                </div>
                 <div id="gigLocation">
-                    <h3 style="padding:4px; color:rgb(46,185,94)">Location:</h3>
-                    <p>{{this.location}}</p>
-                </div>
-                <div id="gigDescription">
-                    <h3 style="padding:4px; color:rgb(46,185,94)">Description:</h3>
-                    <p>{{this.description}}</p>
-                </div>
-                <div id="payment">
-                    <h3 style="padding:4px; color:rgb(46,185,94)">Payment:</h3>
-                    <p>$ {{this.payment}}</p>
-                </div>
-                <div id="dates">
-                    <h3>Dates:</h3>
-                    <p>{{this.startDate}} - {{this.endDate}}</p>
-                </div>
-            </div>
-<<<<<<< HEAD
-            {{/job}}
-            <button type="button" class="success button" style="margin-top: 26px" id="claim">Claim</button>
-=======
-            <div id="gigLocation">
                 <h3 style="padding:4px; color:rgb(46,185,94)">Location:</h3>
                 <p>{{this.location}}</p>
             </div>
@@ -56,8 +27,9 @@
                 <p>{{this.startDate}} - {{this.endDate}}</p>
             </div>
             <a class="button button-rounded-hover" href="/taker.html">I'll take this gig</a>
+            </div>
+            
             {{/job}}
->>>>>>> dec8e71fdab8c8652952da425d5a0905cba3355c
         </div>
         <div class="cell small-2" id="empty-cell"></div>
     </div>
