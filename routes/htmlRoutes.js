@@ -2,6 +2,13 @@ var db = require("../models");
 var path = require("path");
 
 module.exports = function (app) {
+  app.get("/", function (req, res) {
+    db.gigs.findAll({}).then(function (data) {
+      res.render("jobsAvailable", {
+        jobs: data
+      });
+    });
+  });
   // Load index page
   app.get("/jobsAvailable", function (req, res) {
     db.gigs.findAll({}).then(function (data) {
@@ -26,9 +33,9 @@ module.exports = function (app) {
 
 
   //Sign-in page...
-  app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
-  });
+  // app.get("/", function (req, res) {
+  //   res.sendFile(path.join(__dirname, "../public/index.html"));
+  // });
 
   //Provider form
   app.get("/gig", function (req, res) {

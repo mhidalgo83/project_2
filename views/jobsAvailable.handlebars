@@ -3,13 +3,12 @@
     <div class="cell small-2" id="empty-cell"></div>
     <div class="cell small-8" style="border: 2px solid grey; border-radius: 4px; background-color: white">
       <div id="jobs-title">
-        <h3 style="padding:4px; color:rgb(46,185,94)">Current Gigs Available in '
-          <span id="jobs-available-category">All</span>'</h3>
+        <h3 style="padding:4px; color:rgb(46,185,94)">Current Gigs Available:</h3>
       </div>
       <div class="jobs-available-container" style="border:2px solid lightgray; margin:5px; border-radius: 4px; background-color: white">
         {{#each jobs}}
         <div class="each-job" style="padding:6px">
-          <a data-id="{{this.id}}" style="border-radius: 4px" href="jobsAvailable/{{this.id}}">
+          <a data-id="{{this.id}}" style="border-radius: 4px; color: rgb(46,185,94)" href="jobsAvailable/{{this.id}}">
             <p style="border: 1px solid grey; padding: 4px; border-radius: 4px">
               {{this.name}}</p>
           </a>

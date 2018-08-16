@@ -2,9 +2,12 @@ body {
     background-image: url(https://images.pexels.com/photos/1020320/pexels-photo-1020320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350);
     font-family: 'Special Elite';
 }
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Special Elite';
+}
 h1 {
     padding-top: 15px;
-    font-family: Special Elite; 
+
     color: white;
 }
 
@@ -16,10 +19,22 @@ h1 {
     border-bottom: solid 3px rgb(24, 134, 61);
     border-top: solid 3px rgb(24, 134, 61);
 }
+.top-bar-right {
+    padding-top: 15px;
+    color: white;
+}
 .top-links {
     color: white;
     font-size: 20px;
     padding-top: 40px;
+}
+#claim {
+    padding: 4px;
+}
+#gig-form {
+    font-family: 'Special Elite';
+    background-color: white;
+    padding-top: 20px; 
 }
 #list-o-gigs {
     margin-left: 80px;
@@ -42,14 +57,6 @@ h1 {
 
 }
 
-#heading {
-    font-family: 'Special Elite', cursive;
-}
-
-h4 {
-    font-family: 'Special Elite', cursive;
-}
-
 .switch-paddle {
     background-color:rgb(197, 3, 3);
 }
@@ -66,7 +73,7 @@ h4 {
 }
 
 #center {
-    font-family: 'Special Elite', cursive;
+    /* font-family: 'Special Elite', cursive; */
     background-color:white;
     border:4px inset rgb(24, 134, 61);
     position: fixed;
@@ -80,7 +87,7 @@ h4 {
 }
 
 #center2 {
-    font-family: 'Special Elite', cursive;
+    /* font-family: 'Special Elite', cursive; */
     background-color: white;
     border:4px inset  rgb(24, 134, 61);
     position: fixed;
@@ -101,7 +108,7 @@ h4 {
     top:82%;
     left:71%;
     border-radius: 45px;
-    font-family: 'Special Elite', cursive;
+    /* font-family: 'Special Elite', cursive; */
 }
 
 #createUser {
