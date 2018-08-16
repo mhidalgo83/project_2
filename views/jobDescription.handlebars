@@ -3,7 +3,7 @@
     <div class="grid-x">
         <div class="cell small-2" id="empty-cell"></div>
         <div class="cell small-8" style="border: 2px solid grey; border-radius: 4px; background-color: white">
-            {{#each job}}
+            {{#job}}
             <div class="gigName" style="padding:4px; color:rgb(46,185,94); text-align: center">
                 <h2>{{this.name}}
                 </h2>
@@ -29,7 +29,7 @@
                 <h3 style="padding:4px; color:rgb(46,185,94)">Dates:</h3>
                 <p>{{this.startDate}} - {{this.endDate}}</p>
             </div>
-            {{/each}}
+            {{/job}}
         </div>
         <div class="cell small-2" id="empty-cell"></div>
     </div>
