@@ -1,55 +1,53 @@
 var db = require("../models");
 
-module.exports = function(app) {
-  // Get all examples
-  app.get("/api/gigs", function(req, res) {
-    db.Gig.findAll({}).then(function(data) {
+module.exports = function (app) {
+  // Get all gigs
+  app.get("/api/gigs", function (req, res) {
+    db.Gig.findAll({}).then(function (data) {
       res.json(data);
-    });
-  });
-
-  app.get("/api/taker", function(req, res) {
-    db.Taker.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
     });
   });
 
   // Create a new gig...
-  app.post("/api/gigs", function(req, res) {
-    db.Gig.create(req.body).then(function(data) {
+  app.post("/api/gigs", function (req, res) {
+    db.Gig.create(req.body).then(function (data) {
       res.json(data);
     });
   });
 
-  app.get("/api/gigs/:id", function(req, res) {
-    // Here we add an "include" property to our options in our findOne query
-    // We set the value to an array of the models we want to include in a left outer join
-    // In this case, just db.Post
+  //Pulls gig data with associated data
+  app.get("/api/gigs/:id", function (req, res) {
     db.Gig.findOne({
       where: {
         id: req.params.id
       },
       include: [db.Taker]
-    }).then(function(data) {
+    }).then(function (data) {
       res.json(data);
     });
   });
 
-  app.get("/api/takers/:id", function(req, res) {
-    // Here we add an "include" property to our options in our findOne query
-    // We set the value to an array of the models we want to include in a left outer join
-    // In this case, just db.Post
+  //Pulls taker info from database
+  app.get("/api/takers/:id", function (req, res) {
     db.Taker.findOne({
       where: {
         id: req.params.id
       }
-    }).then(function(data) {
+    }).then(function (data) {
       res.json(data);
     });
   });
 
-  app.post("/api/takers", function(req, res) {
-    db.Taker.create(req.body).then(function(data) {
+  //Creates takers for gigs
+  app.post("/api/takers", function (req, res) {
+    db.Taker.create(req.body).then(function (data) {
+      res.json(data);
+    });
+  });
+
+  //Deletes gigs from database
+  app.delete("/api/gigs/:id", function (req, res) {
+    db.Gig.destroy({ where: { id: req.params.id } }).then(function (data) {
       res.json(data);
     });
   });

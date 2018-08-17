@@ -1,8 +1,9 @@
 var db = require("../models");
 
 module.exports = function (app) {
+
   app.get("/", function (req, res) {
-    db.gigs.findAll({}).then(function (data) {
+    db.Gig.findAll({}).then(function (data) {
       res.render("jobsAvailable", {
         jobs: data
       });
