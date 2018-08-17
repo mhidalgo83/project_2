@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    //Event listener for submit button...
+    //Event listener for submit button in taker.handlebars page...
     $("#submit").on("click", function (event) {
         event.preventDefault();
         //Object to be sent to database...
@@ -14,7 +14,7 @@ $(document).ready(function () {
         };
         console.log(newGig);
         //Updates the database with the newGig object...
-        $.post("/api/gigs", newGig).then(function(data){
+        $.post("/api/gigs", newGig).then(function (data) {
             console.log(data);
         });
         //Clears the form after the submit is clicked...
@@ -26,4 +26,28 @@ $(document).ready(function () {
         $("#endDate").val("");
         $("#payment").val("");
     });
+
+    $("#delButton").on("click", function (event) {
+        event.preventDefault();
+
+        console.log("hi");
+
+        var id = $(this).data("gigs");
+
+        //data-gigs = id 
+        //id needs to be dynamic variable on handlebars
+        //
+
+        $.ajax({
+            type: "DELETE",
+            url: "/api/gigs/" + id
+        }).then(
+            function () {
+                console.log("deleted id", id);
+                location.reload();
+            });
+    });
+
+
+
 });
