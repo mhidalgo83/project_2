@@ -11,21 +11,16 @@ $(document).ready(function () {
             state: $("#state").val().trim(),
             zipCode: $("#zip").val().trim(),
             email: $("#email").val().trim(),
-            skills: $("#skills").val().trim()
+            skills: $("#skills").val().trim(),
+            GigId: $("#category").val(),
         };
-        console.log(newTaker);
+        console.log($("#category").val())
         //Updates the database with the newTaker object...
         $.post("/api/takers", newTaker).then(function(data){
             console.log(data);
-        });
-        //Clears the form after the submit is clicked...
-        $("#firstName").val("");
-        $("#lastName").val("");
-        $("#address").val("");
-        $("#city").val("");
-        $("#state").val("");
-        $("#zip").val("");
-        $("#email").val("");
-        $("#skills").val("");
+       }).then(function(){
+           //Clears the form after the submit is clicked...
+            location.reload();
+        })
     });
 });

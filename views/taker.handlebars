@@ -1,0 +1,110 @@
+<!-- Form -->
+<div class="grid-x grid-padding-x">
+    <div class="medium-12 cell">
+        <label>
+            <h6>
+                <b>Gig Name</b>
+            </h6>
+            
+            <select id="category">
+                <option value="">Pick an option</option>
+                {{#jobs}}
+                <option value={{this.id}}>{{this.name}}</option>
+                {{/jobs}}
+            </select>
+            
+        </label>
+    </div>
+</div>
+<form>
+    <div class="grid-container fluid" style="margin-top: 60px">
+        <div class="grid-x">
+            <div class="cell small-3" id="empty-cell"></div>
+            <div class="cell small-6" style="border: 2px solid grey">
+                <div class="grid-x grid-padding-x">
+                    <div class="medium-6 cell">
+                        <label>
+                            <h6>
+                                <b>First Name:</b>
+                            </h6>
+                            <input type="text" placeholder="John" id="firstName">
+                        </label>
+                    </div>
+                    <div class="medium-6 cell">
+                        <label>
+                            <h6>
+                                <b>Last Name: </b>
+                            </h6>
+                            <input type="text" placeholder="Smith" id="lastName">
+                        </label>
+                    </div>
+
+                    <div class="grid-x grid-padding-x">
+                        <div class="medium-12 cell">
+                            <label>
+                                <h6>
+                                    <b>Street Address:</b>
+                                </h6>
+                                <input type="text" placeholder="123 Cherry Lane" id="address">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="medium-6 cell">
+                            <label>
+                                <h6>
+                                    <b>City:</b>
+                                </h6>
+                                <input type="text" placeholder="Tucson" id="city">
+                            </label>
+                        </div>
+                        <div class="medium-3 cell">
+                            <label>
+                                <h6>
+                                    <b>State:</b>
+                                </h6>
+                                <input type="text" placeholder="AZ" id="state">
+                            </label>
+                        </div>
+                        <div class="medium-3 cell">
+                            <label>
+                                <h6>
+                                    <b>Zipcode:</b>
+                                </h6>
+                                <input type="number" placeholder="54321" id="zip">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="medium-12 cell">
+                            <label>
+                                <h6>
+                                    <b>Email:</b>
+                                </h6>
+                                <input type="email" placeholder="johnsmith.com" id="email">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="medium-12 cell">
+                            <label>
+                                <h6>
+                                    <b>Skills:</b>
+                                </h6>
+                                <textarea placeholder="Write any skills you have..." style="height:100px" id="skills"></textarea>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="medium-6 cell">
+                            <button type="button" class="success button" style="margin-top: 26px" id="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell small-3" id="empty-cell"></div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="js/takerdata.js"></script>

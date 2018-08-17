@@ -1,25 +1,34 @@
 var db = require("../models");
-var path = require("path");
 
 module.exports = function (app) {
   // Load index page
   app.get("/jobsAvailable", function (req, res) {
-    db.gigs.findAll({}).then(function (data) {
+    db.Gig.findAll({}).then(function (data) {
       res.render("jobsAvailable", {
         jobs: data
       });
     });
   });
 
+  app.get("/taker", function (req, res) {
+    db.Gig.findAll({}).then(function (data) {
+      res.render("taker", {
+        jobs: data
+      });
+    });
+  });
+
   // Loads jobDescription page based on id from jobsAvailable page
-  
+
   app.get("/jobsAvailable/:id", function (req, res) {
     console.log(req.params.id);
-    db.gigs.findOne({ where: { id: req.params.id } }).then(function (data) {
+    db.Gig.findOne({
+      where: { id: req.params.id }, include: [db.Taker]
+    }).then(function (data) {
       res.render("jobDescription", {
         job: data
       });
-      console.log(data);
+      console.log(data.id);
     });
   });
 
