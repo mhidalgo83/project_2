@@ -1,5 +1,3 @@
-<!-- Top Navbar -->
-
 <head>
   <!--Script-->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -14,12 +12,12 @@
   <link rel="stylesheet" href="./styles/gig_style.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Diplomata|News+Cycle|Playfair+Display+SC:900i|Racing+Sans+One|Special+Elite|Yatra+One"
     rel="stylesheet">
-
 </head>
+
 <!-- Top Navbar -->
 <div class="top-bar">
   <div class="top-bar-left">
-    <button type="button" class="button-home">G</button></a><span id="title-name" style="color: white">et-A-Gig</span>
+    <button type="button" class="button-home">G</button></a><span id="title-name">et-A-Gig</span>
     <a href="/jobsAvailable" class="top-links" id="list-o-gigs"><b>List-O-Gigs</b></a>
     <a href="./gig.html" class="top-links" id="post-a-gig"><b>Post-A-Gig</b></a>
   </div>
@@ -27,12 +25,13 @@
     <h3>Tucson, AZ</h3>
   </div>
 </div>
+
 <!-- Form -->
 <form>
   <div class="grid-container fluid" style="margin-top: 60px">
     <div class="grid-x">
       <div class="cell small-3"></div>
-      <div class="cell small-6" style="border: 2px solid rgb(24, 134, 61)" id="gig-form">
+      <div class="cell small-6" id="gig-form">
         <div class="grid-x grid-padding-x">
           <div class="medium-12 cell">
             <label>
@@ -74,7 +73,7 @@
               <h6>
                 <b>Gig Description:</b>
               </h6>
-              <textarea placeholder="Description" style="height:100px" id="description"></textarea>
+              <textarea placeholder="Description" id="description"></textarea>
             </label>
           </div>
         </div>
@@ -84,7 +83,7 @@
               <h6>
                 <b>Start Date:</b>
               </h6>
-              <input type="date" class="span2" data-date-format="yyyy/mm/dd" id="startDate">
+              <input type="date" class="span2" data-date-format="mm/dd/yyyy" id="startDate">
             </label>
           </div>
           <div class="medium-6 cell">
@@ -106,8 +105,7 @@
             </label>
           </div>
           <div class="medium-6 cell">
-            <button type="button" class="success button" style="margin-top: 26px; border: solid 2px rgb(24, 134, 61)" id="submit">Submit</button>
-
+            <button type="button" class="success button" id="submit">Submit</button>
           </div>
         </div>
       </div>

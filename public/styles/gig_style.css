@@ -10,8 +10,14 @@ h1 {
     padding-top: 15px;
     color: white;
 }
+h5 {
+    color:rgb(46,185,94);
+}
 p {
     padding-left: 30px;
+}
+button {
+    color: white;
 }
 footer {
     height: 60px;
@@ -50,15 +56,35 @@ footer, .push {
     background-color: rgb(46,185,94);
     margin:5px;
 }
+.button-home {
+    margin-left: 20px;
+    margin-top: 8px;
+    font-size: 30px;
+    background-color: rgb(24, 134, 61);
+    color: white;
+    height: 40px;
+    width: 30px;
+    padding-top: 8px;
+    border-radius: 3px;
+}
+.gig-name {
+    padding:2px;
+    color:rgb(46,185,94);
+    text-align: center;
+}
+#description {
+    height: 100px;
+}
+#description-main-container {
+    border: 2px solid grey;
+    border-radius: 4px;
+    background-color: white;
+    padding: 5px
+}
 #jobs-available-outer-container {
     border: 2px solid rgb(24, 134, 61);
     border-radius: 4px;
     background-color: white;
-}
-#job-description-outer-container {
-    border: 2px solid rgb(24, 134, 61);
-    border-radius: 4px;
-    background-color: rgb(46,185,94);
 }
 #job-description-container {
     border: 2px solid rgb(24, 134, 61);
@@ -66,6 +92,11 @@ footer, .push {
     background-color: white;
     margin:30px;
     padding: 20px;
+}
+#job-description-outer-container {
+    border: 2px solid rgb(24, 134, 61);
+    border-radius: 4px;
+    background-color: rgb(46,185,94);
 }
 #each-job {
     margin: 20px 30px -10px 30px;
@@ -87,82 +118,15 @@ footer, .push {
 #post-a-gig {
     margin-left: 30px;
 }
-#title {
-    
-    box-sizing: border-box;
-    width: 700px;
-    border:4px inset rgb(182, 214, 255);
-    background-color: rgb(246, 250, 246);
-    color: black;
-    position: fixed;
-    text-align: center;
-    top: 5%;
-    left: 8%;
-    right: 12%;
-    
-}
 #title-name {
     font-size: 30px;
     color: white
 }
-.button-home {
-    margin-left: 20px;
-    margin-top: 8px;
-    font-size: 30px;
-    background-color: rgb(24, 134, 61);
-    color: white;
-    height: 40px;
-    width: 30px;
-    padding-top: 8px;
-    border-radius: 3px;
+#submit {
+    margin-top: 26px;
+    border: solid 2px rgb(24, 134, 61);
 }
 
-#center {
-    
-    background-color:white;
-    border:4px inset rgb(24, 134, 61);
-    position: fixed;
-    height: 200px;
-    margin: 20px;
-    top:30%;
-    left:5%;
-    right:10%;
-    transform: (-50%,-50%);
-    border-radius: 5px;
-}
-
-#center2 {
-    /* font-family: 'Special Elite', cursive; */
-    background-color: white;
-    border:4px inset  rgb(24, 134, 61);
-    position: fixed;
-    height: 200px;
-    margin: 20px;
-    top:50%;
-    left:5%;
-    right:10%;
-    transform: (-50%,-50%); 
-    border-radius: 5px;
-}
-
-
-#signin{
-    position: fixed;
-    width: 275px;
-    height: 100px;
-    top:82%;
-    left:71%;
-    border-radius: 45px;
-    /* font-family: 'Special Elite', cursive; */
-}
-
-#createUser {
-    background-color: rgb(46,185,94);
-}
-
-#existingUser {
-    background-color: rgb(46,185,94);
-}
 
 
 
