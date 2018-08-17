@@ -5,14 +5,14 @@
       <div id="jobs-title">
         <h3 style="padding:4px; color:rgb(46,185,94)">Current Gigs Available:</h3>
       </div>
-      <div class="jobs-available-container">
+      <div id="jobs-available-container">
         {{#each jobs}}
         <div class="grid-x">
           <div class="cell small-11">
             <div id="each-job">
               <a data-id="{{this.id}}" href="jobsAvailable/{{this.id}}">
-                <p style="border: 1px solid grey; padding: 4px; border-radius: 4px">
-                  {{this.name}}</p>
+                <p style="padding-top: 4px; border-radius: 4px">
+                  {{this.name}} <span style="margin-left: 20px; color: black">Payment:</span> ${{this.payment}}</p>
               </a>
             </div>
           </div>

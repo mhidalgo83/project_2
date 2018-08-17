@@ -15,6 +15,7 @@ h5 {
 }
 p {
     padding-left: 30px;
+    margin: 5px;
 }
 button {
     color: white;
@@ -22,17 +23,17 @@ button {
 footer {
     height: 60px;
     width: 100%;
-    background-color: rgb(46,185,94);
-    border-top: solid 3px rgb(24, 134, 61);
-    margin-top: 60px;
-    color: white;
     text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    background-color: rgb(46,185,94);
+    border-top: solid 3px rgb(24, 134, 61);    
+    color: white;
+    position:fixed;
+    left:0px;
+    bottom:0px;
 }
 footer, .push {
     height: 60px;
+    flex-shrink: 0;
 }
 .top-bar {
     background-color: rgb(46,185,94);
@@ -51,12 +52,7 @@ footer, .push {
     font-size: 20px;
     padding-top: 40px;
 }
-.jobs-available-container {
-    border: 2px solid rgb(24, 134, 61);
-    border-radius: 4px;
-    background-color: rgb(46,185,94);
-    margin:5px;
-}
+
 .button-home {
     margin-left: 20px;
     margin-top: 8px;
@@ -68,26 +64,29 @@ footer, .push {
     padding-top: 8px;
     border-radius: 3px;
 }
-.gig-name {
-    padding:2px;
-    color:rgb(46,185,94);
-    text-align: center;
-}
-#description {
-    height: 100px;
-}
+
 #description-main-container {
     border: 2px solid grey;
     border-radius: 4px;
     background-color: white;
-    height: 550px;
-    overflow: auto;
-    
+    padding: 5px;
+    height: 610px; 
+    overflow: auto;   
 }
 #jobs-available-outer-container {
     border: 2px solid rgb(24, 134, 61);
     border-radius: 4px;
     background-color: white;
+    height: 505px;
+    
+}
+#jobs-available-container {
+    border: 2px solid rgb(24, 134, 61);
+    border-radius: 4px;
+    background-color: rgb(46,185,94);
+    height: 438px;
+    margin:5px;
+    overflow: auto;
 }
 #job-description-container {
     border: 2px solid rgb(24, 134, 61);
@@ -100,11 +99,14 @@ footer, .push {
     border: 2px solid rgb(24, 134, 61);
     border-radius: 4px;
     background-color: rgb(46,185,94);
+    overflow: auto;
+    
 }
 #each-job {
-    margin: 20px 30px -10px 30px;
+    margin: 20px 30px 10px 30px;
     background-color: white;
 }
+
 #claim {
     padding: 4px;
 }
@@ -129,10 +131,21 @@ footer, .push {
     margin-top: 26px;
     border: solid 2px rgb(24, 134, 61);
 }
+.gig-name {
+    padding:2px;
+    color:rgb(46,185,94);
+    text-align: center;
+}
+.gigName {
+    text-align: center;
+}
 
 #trash{
     margin-top: 27px;
     color: white;
+}
+#trash:hover {
+    color: darkblue;
 }
 
 
