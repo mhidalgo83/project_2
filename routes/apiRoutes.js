@@ -27,17 +27,12 @@ module.exports = function(app) {
     });
   });
 
-  // Delete an example by id
-  app.delete("/api/provider/:id", function(req, res) {
-    db.provider.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
+  // Delete by id
+ app.delete("/api/gig/:id", function (req, res) {
+    db.gigs.destroy({ where: { id: req.params.id } }).then(function (data) {
+      res.json(data);
     });
   });
 
-    // Delete an example by id
-    app.delete("/api/taker/:id", function(req, res) {
-      db.taker.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-        res.json(dbExample);
-      });
-    });
+    
 };
