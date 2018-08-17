@@ -27,23 +27,16 @@ $(document).ready(function () {
         $("#payment").val("");
     });
 
-    $("#delButton").on("click", function (event) {
+    //Code for trash button...
+    $("#trash").on("click", function (event) {
         event.preventDefault();
-
-        console.log("hi");
-
-        var id = $(this).data("gigs");
-
-        //data-gigs = id 
-        //id needs to be dynamic variable on handlebars
-        //
-
+        var id = $(this).data("id");
+        //Call to database...
         $.ajax({
             type: "DELETE",
             url: "/api/gigs/" + id
         }).then(
             function () {
-                console.log("deleted id", id);
                 location.reload();
             });
     });
