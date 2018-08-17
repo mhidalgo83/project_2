@@ -2,11 +2,13 @@
 <div class="grid-container fluid" style="margin-top: 60px">
     <div class="grid-x">
         <div class="cell small-2" id="empty-cell"></div>
+
         <div class="cell small-8" style="border: 2px solid grey; border-radius: 4px; background-color: white; padding: 5px">
             {{#job}}
             <div class="gigName" style="padding:2px; color:rgb(46,185,94); text-align: center">
                 <h3>{{this.name}}
                 </h3>
+
             </div>
             <div id="job-description-outer-container">
                 <div id="job-description-container">
@@ -34,6 +36,7 @@
                     <a class="button button-rounded-hover" href="/taker.html">I'll take this gig</a>
                 </div>
             </div>
+
         </div>
 
         {{/job}}
