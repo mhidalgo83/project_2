@@ -156,13 +156,11 @@ footer, .push {
     /* font-family: 'Special Elite', cursive; */
 }
 
-#createUser {
-    background-color: rgb(46,185,94);
+#trash{
+    margin-top: 27px;
+    color: white;
 }
 
-#existingUser {
-    background-color: rgb(46,185,94);
-}
 
 
 
