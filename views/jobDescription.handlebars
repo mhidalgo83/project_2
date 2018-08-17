@@ -1,47 +1,47 @@
 <!-- Jobs Description -->
-<div class="grid-container fluid" style="margin-top: 60px">
+<div class="grid-container fluid" style="margin-top: 30px">
     <div class="grid-x">
         <div class="cell small-2" id="empty-cell"></div>
-        <div class="cell small-8" style="border: 2px solid grey; border-radius: 4px; background-color: white; padding: 5px">
+        <div class="cell small-8" id="description-main-container">
             {{#job}}
-            <div class="gigName" style="padding:2px; color:rgb(46,185,94); text-align: center">
+            <div class="gigName">
                 <h3>{{this.name}}
                 </h3>
             </div>
             <div id="job-description-outer-container">
                 <div id="job-description-container">
                     <div id="category">
-                        <h5 style="padding:4px; color:rgb(46,185,94)">Category:</h5>
+                        <h5>Category:</h5>
                         <p>{{this.category}}</p>
                     </div>
                     <div id="gigLocation">
-                        <h5 style="padding:4px; color:rgb(46,185,94)">Location:</h5>
+                        <h5>Location:</h5>
                         <p>{{this.location}}</p>
                     </div>
                     <div id="gigDescription">
-                        <h5 style="padding:4px; color:rgb(46,185,94)">Description:</h5>
+                        <h5>Description:</h5>
                         <p>{{this.description}}</p>
                     </div>
                     <div id="payment">
-                        <h5 style="padding:4px; color:rgb(46,185,94)">Payment:</h5>
+                        <h5>Payment:</h5>
                         <p>$ {{this.payment}}</p>
                     </div>
                     <div id="dates">
-                        <h5 style="padding:4px; color:rgb(46,185,94)">Dates:</h5>
+                        <h5>Dates:</h5>
                         <p>
                             <span style="color: rgb(46,185,94)"> From </span>{{this.startDate}}
                             <span style="color: rgb(46,185,94)">
                                 To </span> {{this.endDate}}</p>
                     </div>
                     <div id="takers">
-                        <h3 style="padding:4px; color:rgb(46,185,94)">Takers:</h3>
+                        <h5>Takers:</h5>
                         {{#each this.Takers}}
                         <a href="/takerProfile/{{id}}">
                             <p>{{firstName}} {{lastName}}</p>
                         </a>
                         {{/each}}
                     </div>
-                    <a class="button button-rounded-hover" href="/taker">I'll take this gig</a>
+                    <a class="button button-rounded-hover" href="/taker"><b>I'll take this gig</b></a>
                 </div>
             </div>
         </div>

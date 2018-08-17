@@ -10,22 +10,30 @@ h1 {
     padding-top: 15px;
     color: white;
 }
+h5 {
+    color:rgb(46,185,94);
+}
 p {
     padding-left: 30px;
+    margin: 5px;
+}
+button {
+    color: white;
 }
 footer {
     height: 60px;
-    background-color: rgb(46,185,94);
-    border-top: solid 3px rgb(24, 134, 61);
-    margin-top: 60px;
-    color: white;
+    width: 100%;
     text-align: center;
-    position: absolute;
-    left: 0;
-    right: 0;
+    background-color: rgb(46,185,94);
+    border-top: solid 3px rgb(24, 134, 61);    
+    color: white;
+    position:fixed;
+    left:0px;
+    bottom:0px;
 }
 footer, .push {
     height: 60px;
+    flex-shrink: 0;
 }
 .top-bar {
     background-color: rgb(46,185,94);
@@ -44,21 +52,41 @@ footer, .push {
     font-size: 20px;
     padding-top: 40px;
 }
-.jobs-available-container {
-    border: 2px solid rgb(24, 134, 61);
+
+.button-home {
+    margin-left: 20px;
+    margin-top: 8px;
+    font-size: 30px;
+    background-color: rgb(24, 134, 61);
+    color: white;
+    height: 40px;
+    width: 30px;
+    padding-top: 8px;
+    border-radius: 3px;
+}
+
+#description-main-container {
+    border: 2px solid grey;
     border-radius: 4px;
-    background-color: rgb(46,185,94);
-    margin:5px;
+    background-color: white;
+    padding: 5px;
+    height: 610px; 
+    overflow: auto;   
 }
 #jobs-available-outer-container {
     border: 2px solid rgb(24, 134, 61);
     border-radius: 4px;
     background-color: white;
+    height: 505px;
+    
 }
-#job-description-outer-container {
+#jobs-available-container {
     border: 2px solid rgb(24, 134, 61);
     border-radius: 4px;
     background-color: rgb(46,185,94);
+    height: 438px;
+    margin:5px;
+    overflow: auto;
 }
 #job-description-container {
     border: 2px solid rgb(24, 134, 61);
@@ -67,10 +95,18 @@ footer, .push {
     margin:30px;
     padding: 20px;
 }
+#job-description-outer-container {
+    border: 2px solid rgb(24, 134, 61);
+    border-radius: 4px;
+    background-color: rgb(46,185,94);
+    overflow: auto;
+    
+}
 #each-job {
-    margin: 20px 30px -10px 30px;
+    margin: 20px 30px 10px 30px;
     background-color: white;
 }
+
 #claim {
     padding: 4px;
 }
@@ -87,78 +123,29 @@ footer, .push {
 #post-a-gig {
     margin-left: 30px;
 }
-#title {
-    
-    box-sizing: border-box;
-    width: 700px;
-    border:4px inset rgb(182, 214, 255);
-    background-color: rgb(246, 250, 246);
-    color: black;
-    position: fixed;
-    text-align: center;
-    top: 5%;
-    left: 8%;
-    right: 12%;
-    
-}
 #title-name {
     font-size: 30px;
     color: white
 }
-.button-home {
-    margin-left: 20px;
-    margin-top: 8px;
-    font-size: 30px;
-    background-color: rgb(24, 134, 61);
-    color: white;
-    height: 40px;
-    width: 30px;
-    padding-top: 8px;
-    border-radius: 3px;
+#submit {
+    margin-top: 26px;
+    border: solid 2px rgb(24, 134, 61);
 }
-
-#center {
-    
-    background-color:white;
-    border:4px inset rgb(24, 134, 61);
-    position: fixed;
-    height: 200px;
-    margin: 20px;
-    top:30%;
-    left:5%;
-    right:10%;
-    transform: (-50%,-50%);
-    border-radius: 5px;
+.gig-name {
+    padding:2px;
+    color:rgb(46,185,94);
+    text-align: center;
 }
-
-#center2 {
-    /* font-family: 'Special Elite', cursive; */
-    background-color: white;
-    border:4px inset  rgb(24, 134, 61);
-    position: fixed;
-    height: 200px;
-    margin: 20px;
-    top:50%;
-    left:5%;
-    right:10%;
-    transform: (-50%,-50%); 
-    border-radius: 5px;
-}
-
-
-#signin{
-    position: fixed;
-    width: 275px;
-    height: 100px;
-    top:82%;
-    left:71%;
-    border-radius: 45px;
-    /* font-family: 'Special Elite', cursive; */
+.gigName {
+    text-align: center;
 }
 
 #trash{
     margin-top: 27px;
     color: white;
+}
+#trash:hover {
+    color: darkblue;
 }
 
 
