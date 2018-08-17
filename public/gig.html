@@ -16,14 +16,15 @@
     rel="stylesheet">
 
 </head>
- <!-- Top Navbar -->
- <div class="top-bar">
+<!-- Top Navbar -->
+<div class="top-bar">
   <div class="top-bar-left">
     <button type="button" class="button-home">G</button></a><span id="title-name" style="color: white">et-A-Gig</span>
     <a href="/jobsAvailable" class="top-links" id="list-o-gigs"><b>List-O-Gigs</b></a>
     <a href="./gig.html" class="top-links" id="post-a-gig"><b>Post-A-Gig</b></a>
   </div>
   <div class="top-bar-right">
+    <h3>Tucson, AZ</h3>
   </div>
 </div>
 <!-- Form -->
@@ -31,12 +32,12 @@
   <div class="grid-container fluid" style="margin-top: 60px">
     <div class="grid-x">
       <div class="cell small-3"></div>
-      <div class="cell small-6" style="border: 2px solid grey" id="gig-form">
+      <div class="cell small-6" style="border: 2px solid rgb(24, 134, 61)" id="gig-form">
         <div class="grid-x grid-padding-x">
           <div class="medium-12 cell">
             <label>
               <h6>
-                <b>Name of Gig</b>
+                <b>Name of Gig:</b>
               </h6>
               <input type="text" placeholder="Labor Gig" id="name">
             </label>
@@ -44,7 +45,7 @@
           <div class="medium-12 cell">
             <label>
               <h6>
-                <b>Location</b>
+                <b>Location:</b>
               </h6>
               <input type="text" placeholder="1st & Speedway" id="location">
             </label>
@@ -55,14 +56,14 @@
           <div class="medium-12 cell">
             <label>
               <h6>
-                <b>Gig Category</b>
+                <b>Gig Category:</b>
               </h6>
               <select id="category">
-                <option value="">Pick an option</option>
-                <option value="general_labor">General Labor</option>
-                <option value="assembly">Assembly</option>
-                <option value="moving">Moving/Packing</option>
-                <option value="cleaning">Cleaning</option>
+                <option value="">Pick an option:</option>
+                <option value="General_Labor">General Labor</option>
+                <option value="Assembly">Assembly</option>
+                <option value="Moving">Moving/Packing</option>
+                <option value="Cleaning">Cleaning</option>
               </select>
             </label>
           </div>
@@ -71,7 +72,7 @@
           <div class="medium-12 cell">
             <label>
               <h6>
-                <b>Gig Description</b>
+                <b>Gig Description:</b>
               </h6>
               <textarea placeholder="Description" style="height:100px" id="description"></textarea>
             </label>
@@ -81,7 +82,7 @@
           <div class="medium-6 cell">
             <label>
               <h6>
-                <b>Start Date</b>
+                <b>Start Date:</b>
               </h6>
               <input type="date" class="span2" data-date-format="yyyy/mm/dd" id="startDate">
             </label>
@@ -89,7 +90,7 @@
           <div class="medium-6 cell">
             <label>
               <h6>
-                <b>End Date</b>
+                <b>End Date:</b>
               </h6>
               <input type="date" placeholder=".medium-6.cell" data-date-format="yyyy/mm/dd" id="endDate">
             </label>
@@ -105,7 +106,7 @@
             </label>
           </div>
           <div class="medium-6 cell">
-            <button type="button" class="success button" style="margin-top: 26px" id="submit">Submit</button>
+            <button type="button" class="success button" style="margin-top: 26px; border: solid 2px rgb(24, 134, 61)" id="submit">Submit</button>
 
           </div>
         </div>
@@ -113,4 +114,9 @@
       <div class="cell small-3"></div>
     </div>
   </div>
+  <footer>
+    <div class="container">
+      <span class="text-muted"><p class="footer">this site was developed by team get-a-gig</p></span>
+    </div>
+  </footer>
 </form>
