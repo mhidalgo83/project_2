@@ -8,7 +8,6 @@
             <div class="gigName" style="padding:2px; color:rgb(46,185,94); text-align: center">
                 <h3>{{this.name}}
                 </h3>
-
             </div>
             <div id="job-description-outer-container">
                 <div id="job-description-container">
@@ -30,15 +29,21 @@
                     </div>
                     <div id="dates">
                         <h5 style="padding:4px; color:rgb(46,185,94)">Dates:</h5>
-                        <p><span style="color: rgb(46,185,94)"> From </span>{{this.startDate}} <span style="color: rgb(46,185,94)">
+                        <p>
+                            <span style="color: rgb(46,185,94)"> From </span>{{this.startDate}}
+                            <span style="color: rgb(46,185,94)">
                                 To </span> {{this.endDate}}</p>
                     </div>
-                    <a class="button button-rounded-hover" href="/taker.html">I'll take this gig</a>
+                    <div id="takers">
+                        <h3 style="padding:4px; color:rgb(46,185,94)">Takers:</h3>
+                        {{#each this.Takers}}
+                        <p>{{firstName}} {{lastName}}</p>
+                        {{/each}}
+                    </div>
+                    <a class="button button-rounded-hover" href="/taker">I'll take this gig</a>
                 </div>
             </div>
-
         </div>
-
         {{/job}}
     </div>
     <div class="cell small-2" id="empty-cell"></div>

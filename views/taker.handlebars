@@ -1,37 +1,21 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <!--Script-->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/js/foundation.min.js" integrity="sha256-G6jsRyH1fxbsvFIXSCuwYmI1aIDYBa28xscrvmYjJy0= sha384-vtoG68NvPc9azmFJr447vvY8qgdyA4FdaJ5/bqvzIM4eAdZfO0iyRRF8l2AAscYI sha512-43seCcNrHA0BQgrtyajB9sp8yOdv5c8QdYvgjP7zJ7v+dmzAcxYDQ2gupb9aztsNWBq1COIp/3NHYkQs4l/dkg=="
-    crossorigin="anonymous"></script>
-  <script src="js/takerdata.js"></script>
-
-  <!-- Compressed CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/css/foundation.min.css" integrity="sha256-iJQ8dZac/jUYHxiEnZJsyVpKcdq2sQvdA7t02QFmp30= sha384-SplqNBo/0ZlvSdwrP/riIPDozO5ck8+yIm++KVqyMAC53S6m3BaV+2OLpi7ULOOh sha512-ho6hK4sAWdCeqopNZWNy1d9Ok2hzfTLQLcGSr8ZlRzDzh6tNHkVoqSl6wgLsqls3yazwiG9H9dBCtSfPuiLRCQ=="
-    crossorigin="anonymous">
-  <!--our styling-->
-  <link href="https://fonts.googleapis.com/css?family=Diplomata|News+Cycle|Playfair+Display+SC:900i|Racing+Sans+One|Special+Elite|Yatra+One"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./styles/gig_style.css" type="text/css" />
-</head>
-
-<body>
-  <!-- Top Navbar -->
-  <div class="top-bar">
-    <div class="top-bar-left">
-      <button type="button" class="button-home">G</button></a><span id="title-name" style="color: white">et-A-Gig</span>
-      <a href="/jobsAvailable" class="top-links" id="list-o-gigs"><b>List-O-Gigs</b></a>
-      <a href="./gig.html" class="top-links" id="post-a-gig"><b>Post-A-Gig</b></a>
+<!-- Form -->
+<div class="grid-x grid-padding-x">
+    <div class="medium-12 cell">
+        <label>
+            <h6>
+                <b>Gig Name</b>
+            </h6>
+            
+            <select id="category">
+                <option value="">Pick an option</option>
+                {{#jobs}}
+                <option value={{this.id}}>{{this.name}}</option>
+                {{/jobs}}
+            </select>
+            
+        </label>
     </div>
-    <div class="top-bar-right">
-      <h3>Tucson, AZ</h3>
-    </div>
-  </div>
-  <!-- Form -->
-
+</div>
   <form>
     <div class="grid-container fluid" style="margin-top: 60px">
       <div class="grid-x">
@@ -118,12 +102,5 @@
       </div>
     </div>
   </form>
-  <footer>
-    <div class="container">
-      <span class="text-muted"><p class="footer">this site was developed by team get-a-gig</p></span>
-    </div>
-  </footer>
 
-</body>
-
-</html>
+<script src="js/takerdata.js"></script>

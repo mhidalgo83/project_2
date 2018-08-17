@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-    var Taker = sequelize.define("takers", {
+    var Taker = sequelize.define("Taker", {
         firstName: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -60,7 +60,7 @@ module.exports = function (sequelize, DataTypes) {
     Taker.associate = function (models) {
         // A function stating that a taker should belong to an gig
         // A taker can't be created without a gig due to the foreign key constraint
-        Taker.belongsTo(models.gigs, {
+        Taker.belongsTo(models.Gig, {
             foreignKey: {
                 allowNull: false
             }

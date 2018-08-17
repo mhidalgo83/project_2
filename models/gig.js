@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-    var Gig = sequelize.define("gigs", {
+    var Gig = sequelize.define("Gig", {
         name: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -49,7 +49,7 @@ module.exports = function (sequelize, DataTypes) {
     Gig.associate = function(models) {
         // Associating gigs with takers
         // When a gig is deleted, also delete any associated takers
-        Gig.hasMany(models.takers, {
+        Gig.hasMany(models.Taker, {
           onDelete: "cascade"
         });
       };
