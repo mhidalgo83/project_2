@@ -8,6 +8,7 @@ module.exports = function (app) {
       });
     });
   });
+
   // Load index page
   app.get("/jobsAvailable", function (req, res) {
     db.Gig.findAll({}).then(function (data) {
@@ -26,7 +27,6 @@ module.exports = function (app) {
   });
 
   // Loads jobDescription page based on id from jobsAvailable page
-
   app.get("/jobsAvailable/:id", function (req, res) {
     console.log(req.params.id);
     db.Gig.findOne({
@@ -39,12 +39,16 @@ module.exports = function (app) {
     });
   });
 
-
-
-  //Sign-in page...
-  // app.get("/", function (req, res) {
-  //   res.sendFile(path.join(__dirname, "../public/index.html"));
-  // });
+  app.get("/takerProfile/:id", function (req, res) {
+    console.log(req.params.id);
+    db.Taker.findOne({
+      where: { id: req.params.id }
+    }).then(function (data) {
+      res.render("takerProfile", {
+        taker: data
+      });
+    });
+  });
 
   //Provider form
   app.get("/gig", function (req, res) {
