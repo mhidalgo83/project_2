@@ -20,20 +20,18 @@ p {
 button {
     color: white;
 }
-footer {
+.footer {
     height: 60px;
     width: 100%;
     text-align: center;
     background-color: rgb(46,185,94);
     border-top: solid 3px rgb(24, 134, 61);    
     color: white;
-    position:fixed;
-    left:0px;
-    bottom:0px;
-}
-footer, .push {
-    height: 60px;
-    flex-shrink: 0;
+    position: fixed;
+    left:0;
+    bottom:0;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 .top-bar {
     background-color: rgb(46,185,94);
@@ -70,21 +68,19 @@ footer, .push {
     border-radius: 4px;
     background-color: white;
     padding: 5px;
-    height: 610px; 
     overflow: auto;   
 }
 #jobs-available-outer-container {
     border: 2px solid rgb(24, 134, 61);
     border-radius: 4px;
     background-color: white;
-    height: 505px;
+    margin-bottom: 70px;
     
 }
 #jobs-available-container {
     border: 2px solid rgb(24, 134, 61);
     border-radius: 4px;
     background-color: rgb(46,185,94);
-    height: 438px;
     margin:5px;
     overflow: auto;
 }
@@ -99,6 +95,7 @@ footer, .push {
     border: 2px solid rgb(24, 134, 61);
     border-radius: 4px;
     background-color: rgb(46,185,94);
+    margin-bottom: 80px;
     overflow: auto;
     
 }
@@ -116,6 +113,7 @@ footer, .push {
     border: 2px solid rgb(24, 134, 61);
     border-radius: 4px;
     padding-top: 20px; 
+    margin-bottom: 70px;
 }
 #list-o-gigs {
     margin-left: 80px;
