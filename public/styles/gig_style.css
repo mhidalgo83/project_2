@@ -69,13 +69,19 @@ button {
     background-color: white;
     padding: 5px;
     overflow: auto;   
+    margin-bottom: 85px;
 }
 #jobs-available-outer-container {
     border: 2px solid rgb(24, 134, 61);
     border-radius: 4px;
     background-color: white;
+<<<<<<< HEAD
     margin-bottom: 70px;
     
+=======
+    height: 505px;
+    margin-bottom: 85px;
+>>>>>>> 59b4fa83e78065d50d0af8b5c08e545a50456bc3
 }
 #jobs-available-container {
     border: 2px solid rgb(24, 134, 61);
@@ -113,7 +119,11 @@ button {
     border: 2px solid rgb(24, 134, 61);
     border-radius: 4px;
     padding-top: 20px; 
+<<<<<<< HEAD
     margin-bottom: 70px;
+=======
+    margin-bottom: 85px;
+>>>>>>> 59b4fa83e78065d50d0af8b5c08e545a50456bc3
 }
 #list-o-gigs {
     margin-left: 80px;
