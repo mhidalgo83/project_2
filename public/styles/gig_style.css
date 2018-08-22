@@ -72,13 +72,14 @@ footer, .push {
     padding: 5px;
     height: 610px; 
     overflow: auto;   
+    margin-bottom: 85px;
 }
 #jobs-available-outer-container {
     border: 2px solid rgb(24, 134, 61);
     border-radius: 4px;
     background-color: white;
     height: 505px;
-    
+    margin-bottom: 85px;
 }
 #jobs-available-container {
     border: 2px solid rgb(24, 134, 61);
@@ -116,6 +117,7 @@ footer, .push {
     border: 2px solid rgb(24, 134, 61);
     border-radius: 4px;
     padding-top: 20px; 
+    margin-bottom: 85px;
 }
 #list-o-gigs {
     margin-left: 80px;

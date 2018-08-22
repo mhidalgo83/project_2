@@ -28,9 +28,11 @@ $(document).ready(function () {
     });
 
     //Code for trash button...
-    $("#trash").on("click", function (event) {
+    $(".trash").on("click", function (event) {
+        console.log("This works");
         event.preventDefault();
         var id = $(this).data("id");
+        console.log(id);
         //Call to database...
         $.ajax({
             type: "DELETE",
