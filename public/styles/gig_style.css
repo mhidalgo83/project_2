@@ -11,7 +11,7 @@ h1 {
     color: white;
 }
 h5 {
-    color:rgb(46,185,94);
+    color:#6600cc;
 }
 p {
     padding-left: 30px;
@@ -24,8 +24,8 @@ button {
     height: 60px;
     width: 100%;
     text-align: center;
-    background-color: rgb(46,185,94);
-    border-top: solid 3px rgb(24, 134, 61);    
+    background-color:#6600cc;
+    border-top: solid 3px #4d0099;    
     color: white;
     position: fixed;
     left:0;
@@ -34,11 +34,11 @@ button {
     margin-left: 0;
 }
 .top-bar {
-    background-color: rgb(46,185,94);
+    background-color: #6600cc;
     font-family: 'Special Elite';
     font-size: 20px;
     height: 60px;
-    border-bottom: solid 3px rgb(24, 134, 61);
+    border-bottom: solid 3px #4d0099;
 }
 .top-bar-right {
     color: white;
@@ -55,7 +55,7 @@ button {
     margin-left: 20px;
     margin-top: 8px;
     font-size: 30px;
-    background-color: rgb(24, 134, 61);
+    background-color: #6600cc;
     color: white;
     height: 40px;
     width: 30px;
@@ -72,35 +72,30 @@ button {
     margin-bottom: 85px;
 }
 #jobs-available-outer-container {
-    border: 2px solid rgb(24, 134, 61);
+    border: 2px solid #4d0099;
     border-radius: 4px;
     background-color: white;
-<<<<<<< HEAD
-    margin-bottom: 70px;
-    
-=======
     height: 505px;
     margin-bottom: 85px;
->>>>>>> 59b4fa83e78065d50d0af8b5c08e545a50456bc3
 }
 #jobs-available-container {
-    border: 2px solid rgb(24, 134, 61);
+    border: 2px solid #4d0099;
     border-radius: 4px;
-    background-color: rgb(46,185,94);
+    background-color: #6600cc;
     margin:5px;
     overflow: auto;
 }
 #job-description-container {
-    border: 2px solid rgb(24, 134, 61);
+    border: 2px solid #4d0099;
     border-radius: 4px;
     background-color: white;
     margin:30px;
     padding: 20px;
 }
 #job-description-outer-container {
-    border: 2px solid rgb(24, 134, 61);
+    border: 2px solid #4d0099;
     border-radius: 4px;
-    background-color: rgb(46,185,94);
+    background-color: #6600cc;
     margin-bottom: 80px;
     overflow: auto;
     
@@ -116,14 +111,10 @@ button {
 #gig-form,
 #taker-form {
     background-color: white;
-    border: 2px solid rgb(24, 134, 61);
+    border: 2px solid #4d0099;
     border-radius: 4px;
     padding-top: 20px; 
-<<<<<<< HEAD
-    margin-bottom: 70px;
-=======
     margin-bottom: 85px;
->>>>>>> 59b4fa83e78065d50d0af8b5c08e545a50456bc3
 }
 #list-o-gigs {
     margin-left: 80px;
@@ -137,11 +128,11 @@ button {
 }
 #submit {
     margin-top: 26px;
-    border: solid 2px rgb(24, 134, 61);
+    border: solid 2px #4d0099;
 }
 .gig-name {
     padding:2px;
-    color:rgb(46,185,94);
+    color:#6600cc;
     text-align: center;
 }
 .gigName {
